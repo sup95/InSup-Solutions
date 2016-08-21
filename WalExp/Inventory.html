@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Invevntory</title>
+
+
+
+    <link rel='stylesheet prefetch' href='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css'>
+<link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+
+
+
+  </head>
+
+  <body>
+	  
+  <script>
+	  function inFunc()	{
+		  //var res = contracts['SupChainContract'].contract.quanityDip(4);
+		  //var res = 1;
+		  //if(res == 1)	{
+		  	//document.getElementById('in_details').innerText = "Order Placed.";
+		    document.getElementById("table1").rows[1].cells.item(4).innerHTML = "Order Placed";
+		  //}
+		  //alert(document.getElementById("table").rows[0].cells[0].innerHTML);
+	  }
+  </script>
+
+    <div class="container">
+  <h1>Inventory</h1>
+
+  <div id="table" class="table-editable">
+    <span class="table-add glyphicon glyphicon-plus"></span>
+    <table class="table"  id = "table1" >
+      <tr>
+        <th>Product ID</th>
+        <th>Product Name</th>
+        <th>Quantity</th>
+        <th></th>
+        <th>Details</th>
+        <th></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td contenteditable="true">901</td>
+        <td contenteditable="true">Dove Soap</td>
+        <td> <input type='number' id='quantity'> </td>
+        <td> <button class="btn btn-primary" onclick = "inFunc()">Save</button> </td>
+        <td id = 'in_details'>In Stock</td>
+        <td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+      </tr>
+
+      <tr>
+        <td contenteditable="true">902</td>
+        <td contenteditable="true">Shampoo</td>
+        <td> <input type='number' id='quantity'> </td>
+        <td> <button class="btn btn-primary" onclick = "inFunc()">Save</button> </td>
+        <td id = 'in_details'>In Stock</td>
+        <td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+      </tr>
+
+      <tr>
+        <td contenteditable="true">905</td>
+        <td contenteditable="true">Beer</td>
+        <td> <input type='number' id='quantity'> </td>
+        <td> <button class="btn btn-primary">Save</button> </td>
+        <td id = 'in_details'>In Stock</td>
+        <td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+      </tr>
+
+
+      <!-- This is our clonable table line -->
+      <tr class="hide">
+        <td contenteditable="true">Untitled</td>
+        <td contenteditable="true">undefined</td>
+        <td contenteditable="true">Untitled</td>
+        <td contenteditable="true">undefined</td>
+                <td contenteditable="true">undefined</td>
+        <td>
+          <span class="table-remove glyphicon glyphicon-remove"></span>
+        </td>
+        <td>
+          <span class="table-up glyphicon glyphicon-arrow-up"></span>
+          <span class="table-down glyphicon glyphicon-arrow-down"></span>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <button id="export-btn" class="btn btn-primary">Export Data</button>
+  <p id="export"></p>
+</div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js'></script>
+<script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore.js'></script>
+
+        <script src="js/index.js"></script>
+
+
+
+
+  </body>
+</html>

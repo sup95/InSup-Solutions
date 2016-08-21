@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+// You can customize the css styles here
+#botlibrebox {} #botlibreboxbar {background-color: #42c8ff} #botlibreboxbarmax {} #botlibreboxmin {} #botlibreboxmax {} #botlibreboxclose {} #botlibrebubble-text {} #botlibrebox-input {}
+</style>
+<script type='text/javascript' src='https://www.botlibre.com/scripts/sdk.js'></script>
+<script type='text/javascript'>
+SDK.applicationId = "852395187421046996";
+var sdk = new SDKConnection();
+var user = new UserConfig();
+user.user = "sup0508";
+user.token = "8204411166012135322";
+sdk.connect(user, function() {
+var web = new WebChatbotListener();
+web.connection = sdk;
+web.instance = '12870341';
+web.instanceName = 'MyFinBot';
+web.prefix = 'botlibre';
+web.caption = 'Chat Now';
+web.boxLocation = 'bottom-right';
+web.color = '#009900';
+web.background = '#fff';
+web.bubble = true;
+web.avatar = false;
+web.popupURL = "https://www.botlibre.com/chat?&id=12870341&embedded=true&avatar=false&application=852395187421046996&user=sup0508&token=8204411166012135322&background=%23fff&prompt=You+say&send=Send";
+web.createBox();
+});
+</script>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>InSup Solutions</title>
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/flexslider.css" rel="stylesheet" >
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/queries.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+        <![endif]-->
+      </head>
+      <body id="top">
+        <header id="home">
+          <section class="hero" id="hero">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12 text-right navicon">
+                  <a id="nav-toggle" class="nav_slide_button" href="#"><span></span></a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-8 col-md-offset-2 text-center inner">
+                  <h1 class="animated fadeInDown">InSup<span>Solutions</span></h1>
+                  <p class="animated fadeInUp delay-05s">Block chain driven solutions for Retail, Supply chain and Inventory Management</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6 col-md-offset-3 text-center">
+                  <!--a href="http://tympanus.net/codrops/?p=19439" class="learn-more-btn">Back to the article</a-->
+                </div>
+              </div>
+            </div>
+          </section>
+        </header>
+        <section class="intro text-center section-padding" id="intro">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 col-md-offset-2 wp1">
+                <h1 class="arrow">Why InSup Solutions</h1>
+                <p>InSup Solutions leverages the Blockchain technology to provide solutions for inventory, retail and supply chain management. InSup Solutions automates the process of payments and inventory stocking using smart contracts.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="features text-center section-padding" id="features">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <h1 class="arrow">What InSup Solutions Offers</h1>
+                <div class="features-wrapper">
+                  <div class="col-md-4 wp2">
+                    <div class="icon">
+                      <i class="fa fa-laptop shadow"></i>
+                    </div>
+                    <h2><a href="Inventory.html"> Inventory</a></h2>
+                    <p></p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-05s">
+                    <div class="icon">
+                      <i class="fa fa-code shadow"></i>
+                    </div>
+                    <h2><a href='SupplyChainDetails.html'>Supply Chain</a></h2>
+                    <p></p>
+                  </div>
+                  <div class="col-md-4 wp2 delay-1s">
+                    <div class="icon">
+                      <i class="fa fa-heart shadow"></i>
+                    </div>
+                    <h2><a href='sellers.html'>Sellers</a></h2>
+                    <p></p>
+                  </div>
+                  <div class="clearfix"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+
+
+
+
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/waypoints.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/scripts.js"></script>
+        <script src="js/jquery.flexslider.js"></script>
+        <script src="js/modernizr.js"></script>
+      </body>
+    </html>
